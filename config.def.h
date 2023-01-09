@@ -89,6 +89,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_space,     spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_equal,     incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_minus,     incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_l,         shiftview,      {.i = +1 } },
+	{ MODKEY,                       XK_h,         shiftview,      {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_h,         setmfact,       {.f = -0.05} },
 	{ MODKEY|ShiftMask,             XK_l,         setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_Return,    zoom,           {0} },
