@@ -2005,7 +2005,7 @@ togglegaps(const Arg *arg)
 	#else
 	enablegaps = !enablegaps;
 	#endif // PERTAG_GAPS
-	arrange(NULL);
+	arrange(selmon);
 }
 
 void
