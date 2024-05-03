@@ -440,8 +440,10 @@ arrange(Monitor *m)
 	if (m) {
 		arrangemon(m);
 		restack(m);
-	} else for (m = mons; m; m = m->next)
+	} else for (m = mons; m; m = m->next) {
 		arrangemon(m);
+		restack(m);
+	}
 }
 
 void
